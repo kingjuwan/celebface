@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="style.css" />
         
     <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f00e3f269b753ef"></script>
 
         <meta name="naver-site-verification" content="be248ff615a80cf32db2c28f39517260e7217fd5" />
@@ -215,7 +217,7 @@ s.setAttribute('data-timestamp', +new Date());
     $('.result-message').html(resultMessage);
                 for (let i = 0; i < maxPredictions; i++) {
                     const classPrediction =
-                        prediction[0].className + ': ' + prediction[0].probability.toFixed(2);
+                        prediction[0].className + ': ' + prediction[0].probability.toFixed(2) * 100 + "%";
                     labelContainer.childNodes[0].innerHTML = classPrediction;
                 }
             }
@@ -229,4 +231,4 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  -->
-</html> s
+</html> 
